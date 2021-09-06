@@ -1,0 +1,11 @@
+.header {
+  background-color: $primary;
+  a {
+    color: $white !important;
+  }
+  &__logo {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 0;
+  }
+}
