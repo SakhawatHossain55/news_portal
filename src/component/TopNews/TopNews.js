@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Sidebar from "../Dashboard/Sidebar/Sidebar";
 
-const AddNews = () => {
+const TopNews = () => {
   const [service, setService] = useState({});
   const [file, setFile] = useState(null);
   const handleBlur = (e) => {
@@ -24,7 +24,7 @@ const AddNews = () => {
     formData.append("textarea", service.textarea);
     formData.append("category", service.category);
 
-    fetch("http://localhost:5000/news", {
+    fetch("http://localhost:5000/topNews", {
       method: "POST",
       body: formData,
     })
@@ -114,4 +114,4 @@ const AddNews = () => {
   );
 };
 
-export default AddNews;
+export default TopNews;

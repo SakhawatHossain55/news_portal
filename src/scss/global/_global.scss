@@ -20,10 +20,10 @@ a {
       background-color: $primary;
       transition: 1s;
       font-weight: 700;
-      padding: 15px 35px;
+      padding: 10px 35px;
       color: $white;
-      border: none;
       border-radius: 5px;
+      border: 1px solid $primary;
       &:hover {
         background-color: $white;
         color: $primary;

@@ -8,7 +8,7 @@ const News = ({service}) => {
     const {_id, name} = service;
     const history = useHistory()
     const handleServiceClick = () => {
-        history.push(`/booking/${_id}`)
+        history.push(`/singleNews/${_id}`)
     }
     return (
         <Col lg={3} md={6} >
@@ -16,7 +16,7 @@ const News = ({service}) => {
                 <figure>
                 <img src={`data:image/jpeg;base64,${service.image.img}`} />
                 </figure>
-                <h3 className="pt-2">{name}</h3>
+                <h6 className="pt-2">{name}</h6>
                 <button onClick={handleServiceClick} className="btn-brand my-2">Details</button>
             </div>
         </Col>

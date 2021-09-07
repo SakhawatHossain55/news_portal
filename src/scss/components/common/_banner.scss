@@ -1,13 +1,14 @@
 .banner {
-    p{
-        color: black !important;  
-    }
-    b{
-        color: black !important; 
-    }
+  img {
+    height: 400px;
+  }
+  p {
+    color: black !important;
+  }
+  b {
+    color: black !important;
+  }
   &__slider-button {
-      
     margin: 30px 0;
-
   }
 }

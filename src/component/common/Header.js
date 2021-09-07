@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Navbar className="header" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} className=" header__logo" to="/">Go Wash</Navbar.Brand>
+                <Navbar.Brand as={Link} className=" header__logo" to="/">News Portal</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">

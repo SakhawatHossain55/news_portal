@@ -9,7 +9,7 @@ Laundry Service is a service booking web app that I made for programming hero's 
 ### Project features
 
 <ul>
-    <li>Admin can add service or manage.</li>
+    <li>Admin can add news or manage.</li>
     <li>Users can take any service</li>
     <li>Users need to pay if they want to take any service</li>
     <li>Dynamic route using React Router </li>

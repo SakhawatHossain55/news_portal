@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Spinner } from 'react-bootstrap';
-import Sidebar from '../Dashboard/Sidebar/Sidebar';
+import Sidebar from '../Sidebar/Sidebar';
 import Manage from '../Manage/Manage';
 
 const ManageServices = () => {

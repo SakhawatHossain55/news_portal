@@ -14,8 +14,7 @@ const AllNews = () => {
   return (
     <section className="py-5">
       <Container>
-        <h1 className="text-center">What We Do Best</h1>
-        <h4 className="text-center text-brand p-5">Our Services</h4>
+        <h1 className="text-center mb-4">What We Do Best</h1>
         <div className="row">
           {services.length === 0 ? (
             <div className="text-center w-100">

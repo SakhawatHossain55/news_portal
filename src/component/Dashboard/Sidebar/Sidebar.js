@@ -49,13 +49,13 @@ const Sidebar = () => {
               <img src={logo} alt="" />
             </Link>
             <li>
-              <Link to="/orderList" className="text-white">
-                <FontAwesomeIcon icon={faList} /> <span>Order List</span>
+              <Link to="/addNews" className="text-white">
+                <FontAwesomeIcon icon={faPlus} /> <span>Add News</span>
               </Link>
             </li>
             <li>
-              <Link to="/addService" className="text-white">
-                <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
+              <Link to="/topNews" className="text-white">
+                <FontAwesomeIcon icon={faPlus} /> <span>Add Top Nws</span>
               </Link>
             </li>
             <li>
@@ -81,7 +81,7 @@ const Sidebar = () => {
           <FontAwesomeIcon
             icon={faSignOutAlt}
             onClick={() => setLoggedInUser({})}
-          />{" "}
+          />
           <span>Logout</span>
         </Link>
       </div>

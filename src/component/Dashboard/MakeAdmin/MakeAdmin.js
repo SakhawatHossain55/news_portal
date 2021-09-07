@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Col } from "react-bootstrap";
-import { UserContext } from "../../App";
-import Sidebar from "../Dashboard/Sidebar/Sidebar";
+import { UserContext } from "../../../App";
+import Sidebar from "../Sidebar/Sidebar";
 
 const MakeAdmin = () => {
 
