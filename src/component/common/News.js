@@ -5,18 +5,19 @@ import { useHistory } from 'react-router';
 
 
 const News = ({service}) => {
-    const {_id, name} = service;
+    const {_id, name, author} = service;
     const history = useHistory()
     const handleServiceClick = () => {
         history.push(`/singleNews/${_id}`)
     }
     return (
-        <Col lg={3} md={6} >
+        <Col lg={6}  >
             <div className="p-3 mb-2 border news">
                 <figure>
                 <img src={`data:image/jpeg;base64,${service.image.img}`} />
                 </figure>
                 <h6 className="pt-2">{name}</h6>
+                <p>Author: {author}</p>
                 <button onClick={handleServiceClick} className="btn-brand my-2">Details</button>
             </div>
         </Col>

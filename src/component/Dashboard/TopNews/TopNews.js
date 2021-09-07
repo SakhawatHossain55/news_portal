@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import Sidebar from "../Dashboard/Sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const TopNews = () => {
   const [service, setService] = useState({});

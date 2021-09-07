@@ -16,7 +16,3 @@ function App() {
 }
 
 export default App;
-
-// name=newsPortal
-// pass=7NJxplU4JLQvUdPq
-// user=newsPortal

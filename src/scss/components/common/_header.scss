@@ -8,4 +8,39 @@
     font-weight: bold;
     padding-top: 0;
   }
+  &__button {
+    background-color: $primary-secondary;
+    color: $white;
+    h1 {
+      color: $white;
+      font-weight: bold;
+    }
+    span {
+      font-size: 25px;
+      cursor: pointer;
+    }
+    &-icons {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      text-align: center;
+      box-shadow: 0px 0px 4px $primary;
+      border-radius: 50%;
+      background-color: $primary;
+      svg {
+        margin: 3px;
+      }
+    }
+    &-length {
+      width: 40px;
+      height: 35px;
+      padding: 7px;
+      box-shadow: 0px 0px 4px $primary;
+      border-radius: 50%;
+      background-color: $primary;
+    }
+    .badge {
+        padding: 7px;
+    }
+  }
 }

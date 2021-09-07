@@ -59,6 +59,11 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/sidebarNews" className="text-white">
+                <FontAwesomeIcon icon={faPlus} /> <span>Add Sidebar Nws</span>
+              </Link>
+            </li>
+            <li>
               <Link to="/makeAdmin" className="text-white">
                 <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
               </Link>

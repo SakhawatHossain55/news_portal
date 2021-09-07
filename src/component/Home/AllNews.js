@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Container, Spinner } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import News from "../common/News";
+import Sidebars from "../Home/Sidebars";
 
 const AllNews = () => {
   const [services, setServices] = useState([]);
@@ -21,9 +22,18 @@ const AllNews = () => {
               <Spinner animation="grow" />
             </div>
           ) : (
-            services.map((service) => (
-              <News service={service} key={service._id}></News>
-            ))
+            <Row>
+              <Col md={8}>
+                <Row>
+                  {services.map((service) => (
+                    <News service={service} key={service._id}></News>
+                  ))}
+                </Row>
+              </Col>
+              <Col md={4}>
+                <Sidebars />
+              </Col>
+            </Row>
           )}
         </div>
       </Container>

@@ -1,9 +1,8 @@
 import React from "react";
-import { Carousel, Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import banner1 from "../../assets/images/banner1.png";
 import banner2 from "../../assets/images/banner2.png";
 import banner3 from "../../assets/images/banner3.png";
-import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Banner = () => {

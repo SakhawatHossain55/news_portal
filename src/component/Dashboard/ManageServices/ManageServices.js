@@ -9,7 +9,6 @@ const ManageServices = () => {
         fetch(`http://localhost:5000/news`)
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
             setManageService(data)
         })
     },[])
