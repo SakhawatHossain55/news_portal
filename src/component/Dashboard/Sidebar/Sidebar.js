@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../images/logo.png";
 import "./Sidebar.css";
 
 import { UserContext } from "../../../App";
