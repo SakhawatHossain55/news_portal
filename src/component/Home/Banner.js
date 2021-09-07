@@ -11,7 +11,7 @@ const Banner = () => {
       <Container>
           <div className="mt-4">
             <Carousel slide={false} fade={false}>
-              <Carousel.Item interval={1000}>
+              <Carousel.Item interval={5000}>
                 <img
                   className="d-block w-100"
                   src={banner1}

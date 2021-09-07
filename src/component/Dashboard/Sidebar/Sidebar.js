@@ -29,11 +29,11 @@ const Sidebar = () => {
   }, []);
 
   console.log("isAdmin", isAdmin);
-  const isVerifyAdmin =
-    loggedInUser.isLoggedIn === true &&
-    isAdmin !== undefined &&
-    isAdmin.email === loggedInUser.email;
-  console.log(isVerifyAdmin);
+  // const isVerifyAdmin =
+  //   loggedInUser.isLoggedIn === true &&
+  //   isAdmin !== undefined &&
+  //   isAdmin.email === loggedInUser.email;
+  // console.log(isVerifyAdmin);
 
   return (
     <Col md={2}
