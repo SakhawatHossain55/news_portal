@@ -15,6 +15,7 @@ const Sidebars = () => {
 
   return (
     <div>
+      <h1 className="text-center pb-3">Top News</h1>
       {sidebarNews.length === 0 ? (
         <div className="text-center w-100">
           <Spinner animation="grow" />

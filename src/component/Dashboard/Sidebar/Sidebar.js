@@ -44,9 +44,6 @@ const Sidebar = () => {
       <ul className="list-unstyled li-style">
         {/* {isVerifyAdmin ? ( */}
           <>
-            <Link className="laundry" to="/">
-              <img src={logo} alt="" />
-            </Link>
             <li>
               <Link to="/addNews" className="text-white">
                 <FontAwesomeIcon icon={faPlus} /> <span>Add News</span>

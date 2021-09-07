@@ -15,7 +15,6 @@ const AllNews = () => {
   return (
     <section className="py-5">
       <Container>
-        <h1 className="text-center mb-4">What We Do Best</h1>
         <Row>
           {services.length === 0 ? (
             <div className="text-center w-100">

@@ -19,6 +19,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                   <div className="banner__slider-button">
+                    <p className="text-white">The difference between computing and software</p>
                     <Link className="border-0 text-center btn-brand" to="#">
                       Details
                     </Link>
@@ -33,6 +34,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                   <div className="banner__slider-button">
+                  <p className="text-white">The difference between computing and software</p>
                     <Link className="border-0 text-center btn-brand" to="#">
                       Details
                     </Link>
@@ -47,6 +49,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                   <div className="banner__slider-button">
+                  <p className="text-white">The difference between computing and software</p>
                     <Link className="border-0 text-center btn-brand" to="#">
                       Details
                     </Link>
