@@ -7,7 +7,7 @@ const Manage = ({news}) => {
     const {name, _id, image, price} = news;
 
     const deleteProduct = (id) => {
-        fetch(`https://cryptic-inlet-25917.herokuapp.com/delete/${id}`, {
+        fetch(`https://boiling-plateau-88262.herokuapp.com/delete/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -17,7 +17,7 @@ const Manage = ({news}) => {
       };
       const loadProduct = (id) => {
         console.log("id", id);
-        fetch(`https://cryptic-inlet-25917.herokuapp.com/update/${id}`)
+        fetch(`https://boiling-plateau-88262.herokuapp.com/update/${id}`)
         .then((res) => res.json())
         .then(data =>{
           // const update = document.getElementById('update');

@@ -22,7 +22,7 @@ const MakeAdmin = () => {
             formData.append('email', admin.email);
             formData.append('password', admin.password);
 
-            fetch('https://cryptic-inlet-25917.herokuapp.com/admin', {
+            fetch('https://boiling-plateau-88262.herokuapp.com/admin', {
             method: "POST",
             body: formData, email: loggedInUser.email
             })

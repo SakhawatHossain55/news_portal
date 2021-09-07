@@ -24,7 +24,7 @@ const SidebarNews = () => {
     formData.append("textarea", service.textarea);
     formData.append("category", service.category);
 
-    fetch("https://cryptic-inlet-25917.herokuapp.com/sidebarNews", {
+    fetch("https://boiling-plateau-88262.herokuapp.com/sidebarNews", {
       method: "POST",
       body: formData,
     })

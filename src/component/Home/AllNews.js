@@ -6,7 +6,7 @@ import Sidebars from "../Home/Sidebars";
 const AllNews = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("https://cryptic-inlet-25917.herokuapp.com/news")
+    fetch("https://boiling-plateau-88262.herokuapp.com/news")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);

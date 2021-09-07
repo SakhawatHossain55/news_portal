@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [isAdmin, setIsAdmin] = useState([]);
 
   useEffect(() => {
-    fetch("https://cryptic-inlet-25917.herokuapp.com/isAdmin")
+    fetch("https://boiling-plateau-88262.herokuapp.com/isAdmin")
       .then((res) => res.json())
       .then((data) => {
         const found = data.find(
