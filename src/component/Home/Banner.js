@@ -10,7 +10,7 @@ const Banner = () => {
     <div className="banner">
       <Container>
           <div className="mt-4">
-            <Carousel>
+            <Carousel slide={false} fade={false}>
               <Carousel.Item interval={1000}>
                 <img
                   className="d-block w-100"
