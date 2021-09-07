@@ -16,7 +16,7 @@ const AllNews = () => {
     <section className="py-5">
       <Container>
         <h1 className="text-center mb-4">What We Do Best</h1>
-        <div className="row">
+        <Row>
           {services.length === 0 ? (
             <div className="text-center w-100">
               <Spinner animation="grow" />
@@ -35,7 +35,7 @@ const AllNews = () => {
               </Col>
             </Row>
           )}
-        </div>
+        </Row>
       </Container>
     </section>
   );
