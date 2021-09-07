@@ -69,9 +69,9 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/manageService" className="text-white">
+              <Link to="/manageNews" className="text-white">
                 <FontAwesomeIcon icon={faGripHorizontal} />
-                <span>Manage Services</span>
+                <span>Manage News</span>
               </Link>
             </li>
           </>

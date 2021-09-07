@@ -3,8 +3,8 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 import './Manage.css'
 
-const Manage = ({service}) => {
-    const {name, _id, image, price} = service;
+const Manage = ({news}) => {
+    const {name, _id, image, price} = news;
 
     const deleteProduct = (id) => {
         fetch(`http://localhost:5000/delete/${id}`, {
@@ -26,10 +26,10 @@ const Manage = ({service}) => {
       }
 
     return (
-        <Col md={6} lg={4} >
+        <Col lg={3} md={6}>
             <div className="p-3 mb-3 manage-style">
             <img src={`data:image/jpeg;base64,${image.img}`} />
-                <h3 className="pt-3">{name}</h3>
+                <h6 className="pt-3">{name}</h6>
                 <h3>${price}</h3>
                 <button className="btn btn-danger mr-3" onClick={() => deleteProduct(_id)}>Delete</button> 
                 <button className="btn btn-primary" onClick={() => loadProduct(_id)}> Edit</button>

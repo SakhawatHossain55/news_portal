@@ -12,7 +12,7 @@ const News = ({service}) => {
     }
     return (
         <Col lg={6}  >
-            <div className="p-3 mb-2 border news">
+            <div className="p-3 mb-4 border news">
                 <figure>
                 <img src={`data:image/jpeg;base64,${service.image.img}`} />
                 </figure>
