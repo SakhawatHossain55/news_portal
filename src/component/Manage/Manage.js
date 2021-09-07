@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Col } from 'react-bootstrap';
 import './Manage.css'
 
 const Manage = ({service}) => {
@@ -24,7 +26,7 @@ const Manage = ({service}) => {
       }
 
     return (
-        <div className="col-md-6 col-lg-4">
+        <Col md={6} lg={4} >
             <div className="p-3 mb-3 manage-style">
             <img src={`data:image/jpeg;base64,${image.img}`} />
                 <h3 className="pt-3">{name}</h3>
@@ -38,7 +40,7 @@ const Manage = ({service}) => {
                 <input name="name" placeholder="Name" type="text"/>
               </from>
             </div>
-        </div>
+        </Col>
     );
 };
 

@@ -1,26 +1,25 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import './Service.css'
+
 
 const News = ({service}) => {
-    const {_id, name, price, textarea} = service;
+    const {_id, name} = service;
     const history = useHistory()
     const handleServiceClick = () => {
         history.push(`/booking/${_id}`)
     }
     return (
-        <div className="col-md-6 col-lg-4">
-            <div className="p-3 mb-3 service-style">
+        <Col lg={3} md={6} >
+            <div className="p-3 mb-2 border news">
                 <figure>
                 <img src={`data:image/jpeg;base64,${service.image.img}`} />
                 </figure>
-                <h3 className="pt-3">{name}</h3>
-                <h3>${price}</h3>
-                <p>{textarea}</p>
-                <button onClick={handleServiceClick} className="btn-brand my-4">BUY NOW</button>
+                <h3 className="pt-2">{name}</h3>
+                <button onClick={handleServiceClick} className="btn-brand my-2">Details</button>
             </div>
-        </div>
+        </Col>
     );
 };
 

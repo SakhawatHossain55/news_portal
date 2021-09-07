@@ -12,6 +12,7 @@ import {
   faUserPlus,
   faList,
 } from "@fortawesome/free-solid-svg-icons";
+import { Col } from "react-bootstrap";
 
 const Sidebar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -29,16 +30,16 @@ const Sidebar = () => {
       });
   }, []);
 
-  // console.log("isAdmin", isAdmin);
-  // const isVerifyAdmin =
-  //   loggedInUser.isLoggedIn === true &&
-  //   isAdmin !== undefined &&
-  //   isAdmin.email === loggedInUser.email;
-  // // console.log(isVerifyAdmin);
+  console.log("isAdmin", isAdmin);
+  const isVerifyAdmin =
+    loggedInUser.isLoggedIn === true &&
+    isAdmin !== undefined &&
+    isAdmin.email === loggedInUser.email;
+  // console.log(isVerifyAdmin);
 
   return (
-    <div
-      className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4"
+    <Col md={2}
+      className="sidebar d-flex flex-column justify-content-between py-5 px-4"
       style={{ height: "100vh" }}
     >
       <ul className="list-unstyled li-style">
@@ -72,8 +73,8 @@ const Sidebar = () => {
         {/* ) : (
           <>
             <p>Page Not Found</p>
-          </> */}
-        {/* ) */}
+          </>
+        )} */}
       </ul>
       <div>
         <Link to="/login" className="text-white">
@@ -84,7 +85,7 @@ const Sidebar = () => {
           <span>Logout</span>
         </Link>
       </div>
-    </div>
+    </Col>
   );
 };
 

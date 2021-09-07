@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Col } from "react-bootstrap";
 import { UserContext } from "../../App";
 import Sidebar from "../Dashboard/Sidebar/Sidebar";
 
@@ -38,8 +39,8 @@ const MakeAdmin = () => {
   return (
     <div className="container-fluid row">
       <Sidebar></Sidebar>
-      <div className="pt-4 col-md-10" style={{ position: "absolute", right: "0", background: "#F4FDFB" }}>
-        <div className="col-md-8 offset-2">
+      <Col md={10} className="pt-4" style={{ position: "absolute", right: "0", background: "#F4FDFB" }}>
+        <Col md={8} className="offset-2">
             <h3 className="text-brand pt-5">Make Admin</h3>
             <from  onClick={handleSubmit}>
 
@@ -53,8 +54,8 @@ const MakeAdmin = () => {
                 <button type="submit" className="btn-brand">Submit</button>
 
             </from>
-        </div>
-      </div>
+        </Col>
+      </Col>
     </div>
   );
 };

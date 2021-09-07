@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Spinner } from 'react-bootstrap';
+import { Col, Spinner } from 'react-bootstrap';
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
 import Manage from '../Manage/Manage';
 
@@ -16,7 +16,7 @@ const ManageServices = () => {
     return (
         <div className="container-fluid row">
             <Sidebar></Sidebar>
-            <div className="col-md-10" style={{ position: "absolute", right: "0", background: "#F4FDFB" }} >
+            <Col md={6} style={{ position: "absolute", right: "0", background: "#F4FDFB" }} >
             <h3 className="text-brand p-4">Manage Services</h3>
                 <div className="row">
                     {
@@ -28,7 +28,7 @@ const ManageServices = () => {
                          manageService.map(service => <Manage service={service} key={service._id}></Manage>)
                     }
                 </div>
-            </div>
+            </Col>
         </div>
     );
 };
