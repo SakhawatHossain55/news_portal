@@ -6,7 +6,7 @@ import Manage from '../Manage/Manage';
 const ManageNews = () => {
     const [manageNews, setManageNews] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/news`)
+        fetch(`https://cryptic-inlet-25917.herokuapp.com/news`)
         .then(res => res.json())
         .then(data => {
             setManageNews(data)

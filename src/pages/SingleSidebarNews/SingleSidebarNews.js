@@ -6,7 +6,7 @@ const SingleSidebarNews = () => {
   const { _id } = useParams();
   const [singleEvent, setSingleEvent] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/sidebarNews/${_id}`)
+    fetch(`https://cryptic-inlet-25917.herokuapp.com/sidebarNews/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

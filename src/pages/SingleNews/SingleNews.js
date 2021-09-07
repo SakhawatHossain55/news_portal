@@ -6,7 +6,7 @@ const SingleNews = () => {
   const { _id } = useParams();
   const [singleEvent, setSingleEvent] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/singleNews/${_id}`)
+    fetch(`https://cryptic-inlet-25917.herokuapp.com/singleNews/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

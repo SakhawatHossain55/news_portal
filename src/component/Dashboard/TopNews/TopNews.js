@@ -24,7 +24,7 @@ const TopNews = () => {
     formData.append("textarea", service.textarea);
     formData.append("category", service.category);
 
-    fetch("http://localhost:5000/topNews", {
+    fetch("https://cryptic-inlet-25917.herokuapp.com/topNews", {
       method: "POST",
       body: formData,
     })

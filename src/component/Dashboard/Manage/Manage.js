@@ -7,7 +7,7 @@ const Manage = ({news}) => {
     const {name, _id, image, price} = news;
 
     const deleteProduct = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://cryptic-inlet-25917.herokuapp.com/delete/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -17,7 +17,7 @@ const Manage = ({news}) => {
       };
       const loadProduct = (id) => {
         console.log("id", id);
-        fetch(`http://localhost:5000/update/${id}`)
+        fetch(`https://cryptic-inlet-25917.herokuapp.com/update/${id}`)
         .then((res) => res.json())
         .then(data =>{
           // const update = document.getElementById('update');

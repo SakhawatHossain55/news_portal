@@ -6,7 +6,7 @@ const Sidebars = () => {
   const [sidebarNews, setSidebarNews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sidebarNews")
+    fetch("https://cryptic-inlet-25917.herokuapp.com/sidebarNews")
       .then((res) => res.json())
       .then((data) => {
         setSidebarNews(data);
